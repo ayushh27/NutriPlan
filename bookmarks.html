@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NutriPlan: Your Personalized Meal Journey -Bookmarks</title>
+    <!--! Favicon -->
+    <link rel="shortcut icon" href="./favicon copy.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="style.css" />
+    <!-- ----------------FONTS------------ -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
+    <!-- -------------swiper js--------------- -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <!-- ----------------------icons--------------------- -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <!-- ------------navbar--------------- -->
+    <div class="navbar">
+      <div class="left-nav">
+        <a href="index.html" class="logo">
+          <img src="./images/logo2.svg" alt="" />
+          <!-- <img src="./images/logo-dark.svg" alt=""> -->
+        </a>
+      </div>
+      <div class="laptop">
+        <div class="mid-nav">
+          <a href="index.html">Home</a>
+          <a href="recipes.html">Recipes</a>
+          <a href="bookmarks.html" class="focused">Bookmarks</a>
+        </div>
+      </div>
+      <div class="mobile">
+        <div class="mid-nav">
+          <a href="index.html" class="">
+            <span class="material-symbols-outlined"> home_app_logo </span>
+            <p> Home</p>
+          </a>
+          <a href="recipes.html" class="">
+            <span class="material-symbols-outlined"> ramen_dining </span>
+            <p>Recipes</p>
+          </a>
+          <a href="bookmarks.html" class="">
+            <span class="material-symbols-outlined focused"> bookmarks </span>
+            <p class="focused">Bookmarks</p>
+          </a>
+        </div>
+      </div>
+      <div class="right-nav">
+        <div class="container">
+          <input id="checkbox" name="checkbox" type="checkbox" />
+          <label class="label" for="checkbox"> </label>
+        </div>
+      </div>
+    </div>
+
+    <h1 class="bookmark-header">Your Saved Bookmarks Appear Here</h1>
+    <div class="bookmarked-recipes"></div>
+
+    <!-- ----------------------Theme--------------------- -->
+    <script type="module" src="js/bookmarks.js"></script>
+    <script type="module" src="js/theme.js"></script>
+  </body>
+</html>

@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NutriPlan: Your Personalized Meal Journey.</title>
+    <!--! Favicon -->
+    <link rel="shortcut icon" href="./favicon copy.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="style.css" />
+    <!-- ----------------FONTS------------ -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
+    <!-- -------------swiper js--------------- -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <!-- ----------------------icons--------------------- -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <!-- ---------------navbar------------ -->
+
+    <div class="navbar">
+      <div class="left-nav">
+        <a href="index.html" class="logo">
+          <img src="./images/logo2.svg" alt="" />
+          <!-- <img src="./images/logo-dark.svg" alt=""> -->
+        </a>
+      </div>
+      <div class="laptop">
+        <div class="mid-nav">
+          <a href="index.html">Home</a>
+          <a href="recipes.html" class="focused">Recipes</a>
+          <a href="bookmarks.html">Bookmarks</a>
+
+        </div>
+      </div>
+      <div class="mobile">
+        <div class="mid-nav">
+          <a href="index.html" class="">
+            <span class="material-symbols-outlined "> home_app_logo </span>
+            <p> Home</p>
+          </a>
+          <a href="recipes.html" class="">
+            <span class="material-symbols-outlined focused"> ramen_dining </span>
+            <p class="focused">Recipes</p>
+          </a>
+          <a href="bookmarks.html" class="">
+            <span class="material-symbols-outlined"> bookmarks </span>
+            <p >Bookmarks</p>
+          </a>
+        </div>
+      </div>
+      <div class="right-nav">
+        <div class="container">
+          <input id="checkbox" name="checkbox" type="checkbox" />
+          <label class="label" for="checkbox"> </label>
+        </div>
+      </div>
+    </div>
+
+    <!-- --------------filter---------------- -->
+    <div class="filter-icon">
+      <span class="material-symbols-outlined"> filter_list </span>
+      <p>Filters</p>
+    </div>
+    <div class="filter-container">
+      <div class="filter-div">
+        <div class="grid-3 filter-header">
+          <span class="material-symbols-outlined"> filter_list </span>
+          <p>Filter</p>
+          <span class="material-symbols-outlined close-filter"> close </span>
+        </div>
+
+        <div class="filter-search">
+          <input type="text" placeholder="Search" />
+        </div>
+
+        <div class="filter-list grid-3" data-id="cooking-time">
+          <span class="material-symbols-outlined"> timer </span>
+          <p>Cooking Time</p>
+          <span class="material-symbols-outlined"> expand_more </span>
+        </div>
+        <div class="drop-down" id="cooking-time">
+          <div class="option">Hello</div>
+        </div>
+
+        <div class="filter-list grid-3" data-id="ingredients" >
+            <span class="material-symbols-outlined"> grocery </span>
+          <p>Ingredients</p>
+          <span class="material-symbols-outlined"> expand_more </span>
+        </div>
+        <div class="drop-down" id="ingredients">
+          <div class="option">Hello</div>
+        </div>
+
+        <div class="filter-list grid-3" data-id="diet">
+          <span class="material-symbols-outlined"> spa </span>
+          <p>Diet</p>
+          <span class="material-symbols-outlined"> expand_more </span>
+        </div>
+        <div class="drop-down" id="diet">
+          <div class="option">Hello</div>
+        </div>
+
+        <div class="filter-list grid-3" data-id="dish">
+          <span class="material-symbols-outlined">
+            lunch_dining
+            </span>
+          <p>Dish</p>
+          <span class="material-symbols-outlined"> expand_more </span>
+        </div>
+        <div class="drop-down" id="dish">
+          <div class="option">Hello</div>
+        </div>
+
+        <div class="filter-list grid-3" data-id="health">
+          <span class="material-symbols-outlined"> local_hospital </span>
+          <p>Health</p>
+          <span class="material-symbols-outlined"> expand_more </span>
+        </div>
+        <div class="drop-down" id="health">
+          <div class="option">Hello</div>
+        </div>
+
+        <div class="filter-list grid-3" data-id="meal">
+          
+            <span class="material-symbols-outlined"> restaurant_menu </span>
+          <p>Meal</p>
+          <span class="material-symbols-outlined"> expand_more </span>
+        </div>
+        <div class="drop-down" id="meal">
+          <div class="option">Hello</div>
+        </div>
+
+        <div class="filter-list grid-3" data-id="cusine">
+          <span class="material-symbols-outlined"> public </span>
+          <p>Cusine</p>
+          <span class="material-symbols-outlined"> expand_more </span>
+        </div>
+        <div class="drop-down" id="cusine">
+          <div class="option">Hello</div>
+        </div>
+
+        <div class="btn-div">
+          <button class="btn" id="clear">Clear</button>
+          <button class="btn" id="apply">Apply</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- ------------------results of search ------------------- -->
+    <div class="results-div">
+      <h4>All Results</h4>
+      <div class="error-block">Theres an error in the api call</div>
+      <div class="result-cards"></div>
+    </div>
+
+    <!-- ----------------------scripts--------------------- -->
+    
+    <!-- <script src="js/demoCards.js"></script> -->
+    <script src="js/filter.js"></script>
+    <script type="module" src="js/search.js"></script>
+    <script type="module" src="js/detail.js"></script>
+    <!-- ----------------------Theme--------------------- -->
+    <script type="module" src="js/theme.js"></script>
+  </body>
+</html>
